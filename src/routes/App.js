@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTodos } from './useTodos';
-import { TodoCounter } from '../TodoCounter';
-import { TodoSearch } from '../TodoSearch';
-import { TodoList } from '../TodoList';
-import { TodoItem } from '../TodoItem';
-import { TodosLoading } from '../TodosLoading';
-import { TodosError } from '../TodosError';
-import { TodosEmpty } from '../TodosEmpty';
-import { CreateTodoButton } from '../CreateTodoButton';
-import { TodoForm } from '../TodoForm';
-import { Modal } from '../Modal';
-import { TodoHeader } from '../TodoHeader';
-import { ChangeAlert } from '../ChangeALert';
+import { TodoCounter } from '../ui/TodoCounter';
+import { TodoSearch } from '../ui/TodoSearch';
+import { TodoList } from '../ui/TodoList';
+import { TodoItem } from '../ui/TodoItem';
+import { TodosLoading } from '../ui/TodosLoading';
+import { TodosError } from '../ui/TodosError';
+import { TodosEmpty } from '../ui/TodosEmpty';
+import { CreateTodoButton } from '../ui/CreateTodoButton';
+import { TodoForm } from '../ui/TodoForm';
+import { Modal } from '../ui/Modal';
+import { TodoHeader } from '../ui/TodoHeader';
+import { ChangeAlert } from '../ui/ChangeALert';
 
 function App() {
   const { state, stateUpdaters } = useTodos();
