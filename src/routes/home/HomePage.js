@@ -59,25 +59,26 @@ function HomePage() {
         onLoading={() => <TodosLoading />}
         onEmptyTodos={() => <TodosEmpty />}
         onEmptySearchResults={(searchText) => <p>No hay resultados para tu búsqueda de {searchText}</p>}
-        render={todo => (
+        // render={todo => (
+        //   <TodoItem 
+        //     key={todo.text} 
+        //     text={todo.text}
+        //     completed={todo.completed}
+        //     onComplete={() => completeTodo(todo.text)}
+        //     onDelete={() => deleteTodo(todo.text)}
+        //   />
+        // )}
+      >
+        {todo => (
           <TodoItem 
             key={todo.text} 
             text={todo.text}
             completed={todo.completed}
             onComplete={() => completeTodo(todo.text)}
+            onEdit={() => console.log('Editar TODO')}
             onDelete={() => deleteTodo(todo.text)}
           />
         )}
-      >
-        {/* {todo => (
-          <TodoItem 
-            key={todo.text} 
-            text={todo.text}
-            completed={todo.completed}
-            onComplete={() => completeTodo(todo.text)}
-            onDelete={() => deleteTodo(todo.text)}
-          />
-        )} */}
       </TodoList>
 
       <CreateTodoButton setOpenModal={setOpenModal}/>

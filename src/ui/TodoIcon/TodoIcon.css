@@ -15,6 +15,12 @@
     left: 12px;
 }
 
+.Icon-svg {
+    width: 24px;
+    height: 24px;
+    transition: fill 0.3s;
+}
+
 .Icon-container-check:hover .Icon-svg {
     fill: #4caf50;
 }
@@ -33,7 +39,12 @@
     fill: red;
 }
 
-.Icon-svg {
-    width: 24px;
-    height: 24px;
+.Icon-container-edit {
+    position: absolute;
+    top: -24px;
+    right: 40px;
+}
+
+.Icon-container-edit:hover .Icon-svg {
+    fill: orange;
 }
