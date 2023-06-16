@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/curso_react_intro/static/css/main.ffc42736.css",
-    "main.js": "/curso_react_intro/static/js/main.8ddf2070.js",
-    "index.html": "/curso_react_intro/index.html",
-    "static/media/delete.svg": "/curso_react_intro/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
-    "static/media/check.svg": "/curso_react_intro/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.ffc42736.css.map": "/curso_react_intro/static/css/main.ffc42736.css.map",
-    "main.8ddf2070.js.map": "/curso_react_intro/static/js/main.8ddf2070.js.map"
+    "main.css": "/TODO_machine/static/css/main.82f74080.css",
+    "main.js": "/TODO_machine/static/js/main.a6bcc097.js",
+    "index.html": "/TODO_machine/index.html",
+    "static/media/delete.svg": "/TODO_machine/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
+    "static/media/edit.svg": "/TODO_machine/static/media/edit.569363b1fad8252af1f4f6e04345ba2e.svg",
+    "static/media/check.svg": "/TODO_machine/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
+    "main.82f74080.css.map": "/TODO_machine/static/css/main.82f74080.css.map",
+    "main.a6bcc097.js.map": "/TODO_machine/static/js/main.a6bcc097.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffc42736.css",
-    "static/js/main.8ddf2070.js"
+    "static/css/main.82f74080.css",
+    "static/js/main.a6bcc097.js"
   ]
 }
