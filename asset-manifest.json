@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/TODO_machine/static/css/main.82f74080.css",
-    "main.js": "/TODO_machine/static/js/main.a6bcc097.js",
+    "main.css": "/TODO_machine/static/css/main.8f7a98f8.css",
+    "main.js": "/TODO_machine/static/js/main.2916af66.js",
     "index.html": "/TODO_machine/index.html",
     "static/media/delete.svg": "/TODO_machine/static/media/delete.7018c4465589031bd51c8efbe21df9ca.svg",
     "static/media/edit.svg": "/TODO_machine/static/media/edit.569363b1fad8252af1f4f6e04345ba2e.svg",
     "static/media/check.svg": "/TODO_machine/static/media/check.e9a948bba52a34123d2ed7aeda0ea495.svg",
-    "main.82f74080.css.map": "/TODO_machine/static/css/main.82f74080.css.map",
-    "main.a6bcc097.js.map": "/TODO_machine/static/js/main.a6bcc097.js.map"
+    "main.8f7a98f8.css.map": "/TODO_machine/static/css/main.8f7a98f8.css.map",
+    "main.2916af66.js.map": "/TODO_machine/static/js/main.2916af66.js.map"
   },
   "entrypoints": [
-    "static/css/main.82f74080.css",
-    "static/js/main.a6bcc097.js"
+    "static/css/main.8f7a98f8.css",
+    "static/js/main.2916af66.js"
   ]
 }
