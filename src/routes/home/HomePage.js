@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { useTodos } from '../useTodos';
 import { TodoCounter } from '../../ui/TodoCounter';
 import { TodoSearch } from '../../ui/TodoSearch';
@@ -9,13 +9,14 @@ import { TodosLoading } from '../../ui/TodosLoading';
 import { TodosError } from '../../ui/TodosError';
 import { TodosEmpty } from '../../ui/TodosEmpty';
 import { CreateTodoButton } from '../../ui/CreateTodoButton';
-import { TodoForm } from '../../ui/TodoForm';
-import { Modal } from '../../ui/Modal';
+// import { TodoForm } from '../../ui/TodoForm';
+// import { Modal } from '../../ui/Modal';
 import { TodoHeader } from '../../ui/TodoHeader';
 import { ChangeAlert } from '../../ui/ChangeALert';
 
 function HomePage() {
   const  navigate = useNavigate();
+  const [params, setParams] = useSearchParams();
   const { state, stateUpdaters } = useTodos();
 
   const {
@@ -48,6 +49,8 @@ function HomePage() {
         <TodoSearch 
           searchValue={searchValue}
           setSearchValue={setSearchValue}
+          params={params}
+          setParams={setParams}
         />
       </TodoHeader>
 
