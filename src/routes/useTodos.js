@@ -13,7 +13,7 @@ function useTodos() {
     } = useLocalStorage('TODOS_V2', []);
     const [searchValue, setSearchValue] = React.useState('');
     
-    const [openModal, setOpenModal] = React.useState(false);
+    // const [openModal, setOpenModal] = React.useState(false);
     
     const completedTodos = todos.filter(todo => !!todo.completed).length; /* !! - devuelve un boleano */
     const totalTodos = todos.length;
@@ -36,21 +36,30 @@ function useTodos() {
         });
         saveTodos(newTodos);
     }
+
+    const getTodo = (id) => {
+        const newTodos = [...todos];
+        const todoIndex = newTodos.findIndex(todo => todo.id === id);
+        return newTodos[todoIndex];
+    }
     
     const completeTodo = (id) => {
         const newTodos = [...todos];
-        const todoIndex = newTodos.findIndex(
-            (todo) => todo.id === id
-        );
+        const todoIndex = newTodos.findIndex(todo => todo.id === id);
         newTodos[todoIndex].completed = !newTodos[todoIndex].completed;
+        saveTodos(newTodos);
+    };
+
+    const editTodo = (id, newText) => {
+        const newTodos = [...todos];
+        const todoIndex = newTodos.findIndex(todo => todo.id === id);
+        newTodos[todoIndex].text = newText;
         saveTodos(newTodos);
     };
     
     const deleteTodo = (id) => {
         const newTodos = [...todos];
-        const todoIndex = newTodos.findIndex(
-            (todo) => todo.id === id
-        );
+        const todoIndex = newTodos.findIndex(todo => todo.id === id);
         newTodos.splice(todoIndex, 1);
         saveTodos(newTodos);
     };
@@ -62,7 +71,8 @@ function useTodos() {
         completedTodos,
         searchValue,
         searchedTodos,
-        openModal,
+        getTodo,
+        // openModal,
       };
       
       const stateUpdaters = {
@@ -70,7 +80,8 @@ function useTodos() {
         addTodo,
         completeTodo,
         deleteTodo,
-        setOpenModal,
+        editTodo,
+        // setOpenModal,
         sincronizeTodos,
       };
 
